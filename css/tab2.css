@@ -7,7 +7,11 @@ td {
 }
 
 /*Region Tab*/
-ul#tab{
+#hrn_list div:first-child{
+	height:80px;
+	margin-top:5px;
+}
+ul.tab{
 	list-style: none;
 	float: left;
 	padding: 0px;
@@ -15,37 +19,53 @@ ul#tab{
 	width:600px;
 	font-size:1.2em;
 	
-	line-height:50px;
+	line-height:60px;
 }
-ul#tab li{
+ul.tab li{
 	float: left;
 	padding-left: 15px;
-	margin-bottom: -2px;
-	border-radius: 5px 5px 0px 0px / 5px 5px 0px 0px;
+	margin:0 2px;
+	position:relative;
+	top:15px;
 }
 /*adjust 4 regions' width to*/
 
-#tab_region1,#tab_region2{
+ul.tab .region1,ul.tab .region2{
 	width:100px;
-	height:50px;
+	height:60px;
 }
-#tab_region3,#tab_region4{
+ul.tab .region3,ul.tab .region4{
 	width:140px;
-	height:50px;	
+	height:60px;	
 }
-ul#tab li:hover{
+ul.tab li:hover{
 	cursor: pointer;
 }
-li.tab_inactive{
-	border: solid 1px;
-	background-color: #EEE;
-	margin-left:0.1px;
+ul.tab .region1{
+	background-color:#0065bd;
+	color:#FFF;
 }
-li.tab_active{
+ul.tab .region2{
+	background-color:#4bc9f5;
+	color:#FFF;
+}
+ul.tab .region3{
+	background-color:#7fc458;
+	color:#FFF;
+}
+ul.tab .region4{
+	background-color:#ffa700;
+	color:#FFF;
+}
+ul.tab li.tab_inactive{
+
+}
+ul.tab li.tab_active{
 	display: block;
-	border-left: solid 1px;
-	border-right: solid 1px;
-	border-top: solid 1px;
+	height:80px;
+	top:6px;
+	line-height:80px;
+
 }
 
 
@@ -66,16 +86,29 @@ td:first-child{
 }
 .asia, .europe, .northAmerica, .latinAmerica{
 	clear: both;
-	border-left: solid 1px;
-	border-right: solid 1px;
-	border-bottom: solid 1px;
-	width: 480px;
+	border: solid 2px;
+	width: 492px;
 	padding:0px;
-	margin:0px;
+	margin:5px 0px 0px 2px;
 	padding-top: 8px;
 	font-size:1.2em;
 }
-
+.asia {
+	border-color:#0065bd;
+	color:#0065bd;
+}
+.europe{
+	border-color:#4bc9f5;
+	color:#4bc9f5;
+}
+.northAmerica{
+	border-color:#7fc458;
+	color:#7fc458;
+}
+.latinAmerica{
+	border-color:#ffa700;
+	color:#ffa700;
+}
 .europe,.northAmerica, .latinAmerica{
 	display: none;
 }

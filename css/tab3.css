@@ -7,6 +7,12 @@ td {
 }
 
 /*Region Tab*/
+
+#hrn_list div#tab_p{
+	height:80px;
+	margin-top:5px;
+}
+
 ul#tab{
 	list-style: none;
 	float: left;
@@ -14,42 +20,60 @@ ul#tab{
 	margin: 0px;
 	width:600px;
 	font-size:1.2em;
-	
-	line-height:50px;
+	line-height:60px;
 }
 ul#tab li{
 	float: left;
 	padding-left: 15px;
-	margin-bottom: -2px;
-	border-radius: 5px 5px 0px 0px / 5px 5px 0px 0px;
+	margin:0 2px;
+	position:relative;
+	top:15px;
 }
 /*adjust 4 regions' width to*/
 
-#tab_region1,#tab_region2{
+ul#tab #tab_region1,ul#tab #tab_region2{
 	width:100px;
-	height:50px;
+
 }
-#tab_region3,#tab_region4{
+ul#tab #tab_region3,ul#tab #tab_region4{
 	width:140px;
-	height:50px;	
+	
 }
 ul#tab li:hover{
 	cursor: pointer;
 }
-li.tab_inactive{
-	border: solid 1px;
-	background-color: #EEE;
-	margin-left:0.1px;
+ul#tab #tab_region1{
+	background-color:#0065bd;
+	color:#FFF;
 }
-li.tab_active{
-	display: block;
-	border-left: solid 1px;
-	border-right: solid 1px;
-	border-top: solid 1px;
+ul#tab #tab_region2{
+	background-color:#4bc9f5;
+	color:#FFF;
+}
+ul#tab #tab_region3{
+	background-color:#7fc458;
+	color:#FFF;
+}
+ul#tab #tab_region4{
+	background-color:#ffa700;
+	color:#FFF;
+}
+#tab li.tab_inactive{
+	height:60px;
+}
+#tab li.tab_active{
+	height:80px;
+	top:6px;
+	line-height:80px;
+
 }
 
 
 /*Country list*/
+#tab_content{
+	margin:0px;
+	padding:0px;
+}
 .asia table, .europe table, .northAmerica table, .latinAmerica table{
 	width:100%;
 }
@@ -66,16 +90,29 @@ td:first-child{
 }
 .asia, .europe, .northAmerica, .latinAmerica{
 	clear: both;
-	border-left: solid 1px;
-	border-right: solid 1px;
-	border-bottom: solid 1px;
-	width: 480px;
+	border: solid 2px;
+	width: 492px;
 	padding:0px;
-	margin:0px;
+	margin:5px 0px 0px 2px;
 	padding-top: 8px;
 	font-size:1.2em;
 }
-
+.asia {
+	border-color:#0065bd;
+	color:#0065bd;
+}
+.europe{
+	border-color:#4bc9f5;
+	color:#4bc9f5;
+}
+.northAmerica{
+	border-color:#7fc458;
+	color:#7fc458;
+}
+.latinAmerica{
+	border-color:#ffa700;
+	color:#ffa700;
+}
 .europe,.northAmerica, .latinAmerica{
 	display: none;
 }
