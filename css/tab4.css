@@ -1,0 +1,167 @@
+body{
+	padding: 0px;
+	margin: 0px;
+}
+td {
+	width:75px;
+}
+
+/*Region Tab*/
+
+#hrn_list div#tab_p{
+	height:80px;
+	margin-top:5px;
+}
+
+ul#tab{
+	list-style: none;
+	float: left;
+	padding: 0px;
+	margin: 0px;
+	width:600px;
+	font-size:1.2em;
+	line-height:60px;
+}
+ul#tab li{
+	float: left;
+	padding-left: 15px;
+	margin:0 2px;
+	position:relative;
+	top:15px;
+}
+/*adjust 4 regions' width to*/
+
+ul#tab #tab_region1,ul#tab #tab_region2{
+	width:100px;
+
+}
+ul#tab #tab_region3,ul#tab #tab_region4{
+	width:140px;
+	
+}
+ul#tab li:hover{
+	cursor: pointer;
+	opacity:0.7;
+	filter: "alpha(opacity=70)"; 
+}
+ul#tab #tab_region1{
+	background-color:#0065bd;
+	color:#FFF;
+}
+ul#tab #tab_region2{
+	background-color:#4bc9f5;
+	color:#FFF;
+}
+ul#tab #tab_region3{
+	background-color:#7fc458;
+	color:#FFF;
+}
+ul#tab #tab_region4{
+	background-color:#ffa700;
+	color:#FFF;
+}
+#tab li.tab_inactive{
+	height:60px;
+}
+#tab li.tab_active{
+	height:80px;
+	top:6px;
+	line-height:80px;
+
+}
+
+
+/*Country list*/
+#tab_content{
+	margin:0px;
+	padding:0px;
+}
+.asia table, .europe table, .northAmerica table, .latinAmerica table{
+	width:100%;
+}
+td:last-child{
+	width:50%;
+	padding-left:30px;
+}
+td:nth-child(2){
+	width:20%;
+}
+td:first-child{
+	padding-left:30px;
+	width:30%;
+}
+.asia, .europe, .northAmerica, .latinAmerica{
+	clear: both;
+	border: solid 2px;
+	width: 492px;
+	padding:0px;
+	margin:5px 0px 0px 2px;
+	padding-top: 8px;
+	font-size:1.2em;
+}
+.asia a, .europe a, .northAmerica a, .latinAmerica a{
+	padding:5px;
+	text-decoration:none;
+}
+.asia {
+	border-color:#0065bd;
+	color:#0065bd;
+}
+.asia a{
+	color:#909090;
+}
+.asia a:hover{
+	background-color:#0065bd;
+	color:#fff;
+	text-decoration:none;
+}
+.europe{
+	border-color:#4bc9f5;
+	color:#4bc9f5;
+}
+.europe a{
+	color:#909090;
+}
+.europe a:hover{
+	background-color:#4bc9f5;
+	color:#fff;
+	text-decoration:none;
+}
+.northAmerica{
+	border-color:#7fc458;
+	color:#7fc458;
+}
+.northAmerica a{
+	color:#909090;
+}
+.northAmerica a:hover{
+	background-color:#7fc458;
+	color:#fff;
+	text-decoration:none;
+}
+.latinAmerica{
+	border-color:#ffa700;
+	color:#ffa700;
+}
+.latinAmerica a{
+	color:#909090;
+}
+.latinAmerica a:hover{
+	background-color:#ffa700;
+	color:#fff;
+	text-decoration:none;
+}
+.europe,.northAmerica, .latinAmerica{
+	display: none;
+}
+.asia ul, .europe ul, .northAmerica ul, .latinAmerica ul{
+	padding:10px;
+	
+}
+.asia li, .europe li, .northAmerica li, .latinAmerica li{
+	list-style-type:none;
+	padding:0px;
+	margin:20px 0px;
+}
+
+
